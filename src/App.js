@@ -1,8 +1,8 @@
-import Form from "./components/form";
-import NewForm from "./components/updated_form";
+//import Form from "./components/form";
+import SignForm from "./components/SignForm";
 import "./App.css";
 function App() {
-  return <NewForm />;
+  return <SignForm />;
 }
 
 export default App;
