@@ -1,5 +1,5 @@
 import { useField } from "formik";
-import React, { Children } from "react";
+import React from "react";
 
 const CheckBox = ({ children, ...props }) => {
   const [field, meta] = useField({ ...props, type: "checkbox" });
