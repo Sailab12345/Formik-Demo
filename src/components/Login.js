@@ -6,6 +6,8 @@ const Login = () => {
     password: ""
   };
   const onSubmit = (values) => {
+    debugger;
+    const { email, password } = values;
     console.log(values);
   };
   const validationSchema = Yup.object({
@@ -25,6 +27,18 @@ const Login = () => {
               <ErrorMessage name="email" />
             </div>
           </div>
+          <label>Password</label>
+          <div>
+            <Field name="password" type="password" />
+            <div>
+              <ErrorMessage
+                component="div"
+                className="info placeholder text-size-ten text-color-red"
+                name="password"
+              />
+            </div>
+          </div>
+          <button type="submit">Submit</button>
         </Form>
       </Formik>
     </>
