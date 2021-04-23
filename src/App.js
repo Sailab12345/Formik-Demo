@@ -1,7 +1,7 @@
-import SignForm from "./components/SignForm";
+import Login from "./components/Login";
 import "./App.css";
 function App() {
-  return <SignForm />;
+  return <Login />;
 }
 
 export default App;
