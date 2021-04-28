@@ -36,8 +36,8 @@ const Login = () => {
   const validationSchema = Yup.object({
     email: Yup.string().email("Invalid email").required("Required"),
     password: Yup.string().required("Required"),
-    phone: Yup.number().required("Required"),
-    select: Yup.string().required("Required!")
+    phone: Yup.number().required("Required")
+    // select: Yup.string().required("Required!")
   });
 
   // const validate = (value) => {
@@ -69,7 +69,8 @@ const Login = () => {
                     <ErrorMessage name="phone">
                       {(msg) => (
                         <div>
-                          {msg === "Required" ? <div>"Required"</div> : "Phone must be number"}
+                          {/* {msg === "Required" ? <div>"Required"</div> : "Phone must be number"} */}
+                          {msg}
                         </div>
                       )}
                     </ErrorMessage>
@@ -82,12 +83,12 @@ const Login = () => {
                     <ErrorMessage name="password" />
                   </div>
                 </div>
-                <div style={{ marginBottom: "20px" }}>
+                {/* <div style={{ marginBottom: "20px" }}>
                   <Field name="select" as={Dropdown} />
                   <div>
                     <ErrorMessage name="select" />
                   </div>
-                </div>
+                </div> */}
                 <button type="submit" disabled={isSubmitting}>
                   Submit
                 </button>
