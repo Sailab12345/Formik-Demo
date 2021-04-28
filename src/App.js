@@ -1,8 +1,7 @@
-import Form from "./components/form";
-import NewForm from "./components/updated_form";
+import Login from "./components/Login";
 import "./App.css";
 function App() {
-  return <NewForm />;
+  return <Login />;
 }
 
 export default App;
